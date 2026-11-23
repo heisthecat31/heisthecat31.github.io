@@ -1,32 +1,21 @@
 # he_is_the_cat
 
-Portfolio site listing all my projects with screenshots. Plain HTML/CSS/JS, no build step, made for GitHub Pages.
+All my projects in one place, with screenshots, so they're easier to find.
 
-## Put it online (GitHub Pages)
+**🌐 [heisthecat31.github.io](https://heisthecat31.github.io)**
 
-1. Create a new public repo on GitHub named **`heisthecat31.github.io`**
-   (that exact name makes the site live at `https://heisthecat31.github.io`).
-2. Upload everything in this folder to it (or push with git).
-3. In the repo go to **Settings → Pages**, set *Source* to **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. Wait a minute, then open `https://heisthecat31.github.io`.
+I make Echo VR related stuff: mods, tools, launchers, replay tools, Lone Echo tools, and a few things that aren't Echo at all.
 
-Want it at `heisthecat31.github.io/he_is_the_cat` instead? Name the repo `he_is_the_cat` and do the same steps.
+## What's on it
 
-## Adding or editing a project
+- **Echo VR mods**: EchoFrame, E.D.I.T.H, EchoCombat, EchoReplay, EchoXR, EchoNET, Tablet Tabs (Doom on Echo VR), and more
+- **Tools & apps**: Spark, Atrium, EchoVR Installer, Replay Analyser, Map Tester, EchoVR Font, and more
+- **Lone Echo**: Lone Echo Mod Loader, lone_echo_blender
+- **Other**: Echoes (YouTube Music app), Aliucord plugins
+- **Forks & contributions** I've worked on
 
-Everything is in [`projects.js`](projects.js). Copy a block and change it:
+Every project links to its source and releases. You can search, filter by category, and click any image to see it full size.
 
-```js
-{
-  name: "My New Thing", repo: "My-New-Thing", category: "mod", lang: "C++",
-  desc: "One line about what it does.",
-  images: ["images/my-new-thing/1.webp"],   // optional
-  featured: true,                            // optional: show at the top
-},
-```
+---
 
-- `category`: `mod`, `tool`, `lone` or `other`. Add `fork: true` for forks/contributions.
-- Images go in `images/<folder>/`. Any format works; `.webp` keeps it small.
-- Projects without images get a generated colour cover.
-
-Star counts load live from the GitHub API, so they stay up to date on their own.
+Not affiliated with Ready At Dawn or Meta.
