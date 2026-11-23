@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>he_is_the_cat</title>
+  <meta name="description" content="he_is_the_cat — Echo VR mods, tools and other projects, all in one place.">
+  <meta property="og:title" content="he_is_the_cat">
+  <meta property="og:description" content="Echo VR mods, tools and other projects, all in one place.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/125207670?v=4">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/125207670?s=64&v=4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="hero">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/125207670?s=240&v=4" alt="he_is_the_cat avatar" width="120" height="120">
+    <div class="hero-text">
+      <h1>he_is_the_cat</h1>
+      <p class="bio">I make Echo VR related stuff. Mods, tools, launchers, replays, and a few things that aren't Echo at all.</p>
+      <div class="hero-links">
+        <a class="btn primary" href="https://github.com/heisthecat31" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="#all">Browse projects ↓</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title"><span>01</span> Featured</h2>
+      <div class="featured" id="featured"></div>
+    </section>
+
+    <section id="all">
+      <h2 class="section-title"><span>02</span> All projects</h2>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search projects…" aria-label="Search projects" autocomplete="off">
+        <div class="chips" id="chips" role="tablist"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>Nothing matches that. Try another search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>he_is_the_cat · <a href="https://github.com/heisthecat31" target="_blank" rel="noopener">github.com/heisthecat31</a></p>
+    <p class="muted">Not affiliated with Ready At Dawn or Meta.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lb-close" aria-label="Close">×</button>
+    <button class="lb-nav prev" id="lb-prev" aria-label="Previous image">‹</button>
+    <figure>
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-nav next" id="lb-next" aria-label="Next image">›</button>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
